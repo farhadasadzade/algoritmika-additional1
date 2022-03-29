@@ -12,7 +12,7 @@
 }
 
 .intro__header {
-    padding: 30px 0 57px;
+    padding: 30px 0 37px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +25,7 @@
 
 .header-logo {
     margin-right: 35px;
+    margin-bottom: 20px;
 }
 
 .header-logo:last-child {
@@ -33,6 +34,7 @@
 
 .header__right {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .header-text {
@@ -93,14 +95,16 @@
 }
 
 .gain {
-    padding: 110px 0 100px;
+    padding: 110px 0 50px;
+}
+
+.gain__content {
+    padding: 0 60px;
 }
 
 .gain__header {
-    padding: 0 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .gain-title {
@@ -112,6 +116,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #382459;
+    margin-bottom: 136px;
 }
 
 .gain-btn {
@@ -136,8 +141,172 @@
     cursor: pointer;
 }
 
+#gain-btn2 {
+    display: none;
+}
+
 .gain-btn:hover {
     border: 2px solid #FF1DC0;
     background-color: #ffffff;
     color: #FF1DC0;
 }
+
+.gain__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gain-card {
+    margin-bottom: 50px;
+}
+
+.gain-card:first-child {
+    margin-right: 170px;
+}
+
+.gain-icon {
+    margin-bottom: 34px;
+}
+
+#gain-icon-id2 {
+    margin-bottom: 16px;
+}
+
+.gain-card-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    color: #382459;
+    margin-bottom: 30px;
+}
+
+.gain-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #382459;
+    width: 325px;
+}
+
+.statistics {
+    background: #382459;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.statistics__content {
+    padding: 100px 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+}
+
+.statistics__block {
+    margin-bottom: 60px;
+}
+
+.statistics__block:nth-child(3) .statistics-text {
+    width: 376px;
+}
+
+.statistics-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #30FFCD;
+    margin-bottom: 25px;
+}
+
+.statistics-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    width: 300px;
+}
+
+.statistics-subtext {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.0042px;
+    line-height: 15px;
+    color: #FFFFFF;
+    opacity: 0.62;
+}
+
+@media screen and (max-width: 1000px) {
+    .header__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    #gain-btn2 {
+        display: block;
+    }
+
+    .gain-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header__left {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .intro__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .gain__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .statistics__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .intro-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .intro-subtext {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .gain-title {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .gain-text {
+        width: 100%;
+    }
+}
+
