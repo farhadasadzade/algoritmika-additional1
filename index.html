@@ -23,7 +23,7 @@
                         <div class="header-logo">
                             <img src="images/adnsu-logo.svg" alt="adnsu" class="header-logoimg">
                         </div>
-                        <button class="header-btn"><img src="images/header-btn.svg" alt="button"></button>
+                        <button class="header-btn" id="introbtn" onclick="introOpen()"><img src="images/header-btn.svg" alt="button"></button>
                     </div>
                     <div class="header__right">
                         <p class="header-text">#codeforfuture</p>
@@ -46,6 +46,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="intro__mobile" id="intro-mobile">
+        <button class="intro__mobile-btn" onclick="introClose()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="intro__mobile-content">
+            CONTENT
         </div>
     </div>
 
@@ -163,6 +170,49 @@
         <div class="container">
             <div class="development__mobile-content">
                 <h2 class="development__mobile-title light-title">Kurs seçin</h2>
+                <div class="development__mobile-big" onclick="subnavBtn()">
+                    <div class="development__mobile-nav">
+                        <h2 class="development__mobile-navtitle">sistem administratoru</h2>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="development__mobile-subnav" id="subnav">
+                        <button onclick="infoOpen1()" class="development__mobile-navlink" id="infobtn1">sistem administratoru</button>
+                        <button onclick="infoOpen2()" class="development__mobile-navlink" id="infobtn2">web developer</button>
+                    </div>
+                </div>
+                <div class="development__mobile-info" id="info1">
+                    <ul class="development__mobile-infolist">
+                        <li class="development__mobile-infoitem light-text">
+                            Proqram və aparat təminatının quraşdırılması, yığılması və xidməti üzrə bütün baza məsələlərinin həlli üçün biliklər əldə edəcəksən.
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Həftədə 5-6 gün, hər gün 3 saat olmaqla məşğələlər
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Fərdi müştərilərin və kiçik biznesin məsələləri ilə işləməyi öyrənəcəksən
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Sən junior-sistem administratoru kimi işləyə biləcəksən
+                        </li>
+                    </ul>
+                </div>
+                <div class="development__mobile-info" id="info2">
+                    <ul class="development__mobile-infolist">
+                        <li class="development__mobile-infoitem light-text">
+                            Aşağıdakı texnologiyaların stekini praktiki olaraq mənimsəyəcəksən: HTML, CSS, JavaScript, React, NodeJS, MySQL, Git.
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Həftədə 5 gün, hər gün 4 saat olmaqla məşğələlər.
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Portfolioda 5 şəxsi layihə.
+                        </li>
+                        <li class="development__mobile-infoitem light-text">
+                            Sən junior-frontend dizayner kimi işləyə biləcəksən.
+                        </li>
+                    </ul>
+                </div>
+                <button class="development-btn">Kursun proqramı</button>
             </div>
         </div>
     </div>
@@ -210,6 +260,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/56ce35f76e.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
