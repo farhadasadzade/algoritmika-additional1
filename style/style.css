@@ -92,7 +92,7 @@
     color: #FFFFFF;
 }
 
-.intro__content span {
+.intro__content .subtext-div {
     display: inline-block;
     border-bottom: 2px dashed #FFE920;
     padding-bottom: 1px;
